@@ -1,0 +1,11 @@
+---
+title: "Policy Options to Achieve US Sustainable Aviation Fuel Targets"
+collection: workingpapers
+category: workingpapers
+authors: "with Kristen McCormack, William A. Scott, Aaron Smith, Jingran Zhang, and James H. Stock"
+featured: 'Featured in <a href="https://www.eenews.net/articles/sustainable-aviation-fuel-offers-lifeline-to-ethanol-researchers-say/">E&E News</a>, <a href="https://www.rff.org/news/media-highlights/ee-news-sustainable-aviation-fuel-offers-lifeline-to-ethanol-researchers-say/">RFF</a>, and <a href="https://www.belfercenter.org/research-analysis/policy-options-achieve-us-sustainable-aviation-fuel-targets">Belfer Center</a>'
+link: 'https://www.nber.org/papers/w34326'
+excerpt: 'Decarbonizing aviation in the short term will likely entail replacing large quantities of petroleum jet fuel with sustainable aviation fuels (SAFs), which are predominantly biofuels. In the United States, biofuels are currently used as substitutes for gasoline and diesel in road transportation and are supported by a complex set of federal and state policies including the Renewable Fuel Standard (RFS), state low carbon fuel standards, and state and federal tax credits. Policies promoting SAF therefore interact with surface transport biofuel policies. In this paper, we use a new detailed partial equilibrium model of road and air transportation fuel markets to compare various policy options designed to achieve a target of 3 billion gallons of SAF by 2030. Our results suggest that the target is attainable with current technology but not with current policy. Several potential federal policies, including modifications to the existing RFS, a federal SAF tax credit, or a clean aviation standard could meet the 3 billion gallon target with similar emissions reductions and costs but different incidence. The lowest cost policy we study entails replacing all current biofuels policies with a modest carbon tax on fossil transportation fuels paired with a SAF tax credit.'
+date: 2024-04-01
+venue: 'NBER Working Paper'
+---
