@@ -1,14 +1,18 @@
 ---
-title: "Paper Title Number 1"
+title: "Dynamic responses of SO2 pollution to China’s environmental inspections"
 collection: publications
 category: manuscripts
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'https://academicpages.github.io/files/slides1.pdf'
-paperurl: 'https://academicpages.github.io/files/paper1.pdf'
-bibtexurl: 'https://academicpages.github.io/files/bibtex1.bib'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+authors: "with Valerie Karplus"
+permalink: /research/environmentalcrackdowns
+excerpt: 'Abstract: We evaluate the effect of rotating inspections carried out by China’s central government in 2016 to 2017 in response to the country’s air pollution crisis on the environmental performance of targeted cities and coal power plants. Using a staggered difference-in-differences (DID) design,  & we find that during one-month inspections concentrations of sulfur dioxide (SO2) at coal power plants in targeted cities are on average lower by 25 to 52% compared to not-yet-inspected cities but revert by 54 to 62\% on average once scrutiny ends. Following inspections, SO2 pollution increases more quickly at state-owned plants accountable to the central government, compared to state-owned plants accountable to the local (city or below) government. Our results suggest that for most plants SO2 concentration changes during inspections may have been due primarily to the operation of end-of-pipe SO2 removal devices, while following inspections local state-owned plants may have reduced output.'
+date: 2023-04-17
+venue: 'Proceedings of the National Academy of Sciences'
+slidesurl: #'https://academicpages.github.io/files/slides1.pdf'
+paperurl: 'https://www.pnas.org/doi/10.1073/pnas.2214262120'
+bibtexurl: #'https://academicpages.github.io/files/bibtex1.bib'
+citation: #'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+We evaluate the effect of rotating inspections carried out by China’s central government in 2016 to 2017 in response to the country’s air pollution crisis on the environmental performance of targeted cities and coal power plants. Using a staggered difference-in-differences (DID) design,  & we find that during one-month inspections concentrations of sulfur dioxide (SO2) at coal power plants in targeted cities are on average lower by 25 to 52\% compared to not-yet-inspected cities but revert by 54 to 62\% on average once scrutiny ends. Following inspections, SO2 pollution increases more quickly at state-owned plants accountable to the central government, compared to state-owned plants accountable to the local (city or below) government. Our results suggest that for most plants SO2 concentration changes during inspections may have been due primarily to the operation of end-of-pipe SO2 removal devices, while following inspections local state-owned plants may have reduced output.
+
+
+<!-- Significance: The large, short-lived effect of China's environmental inspections on SO2 concentrations in targeted cities is consistent with plants allocating SO2 emissions control effort to periods of greater central government scrutiny. A plant's level of government oversight may affect the drivers and longevity of these reductions. Permanently reducing pollution may require central authorities to increase ongoing monitoring and enforcement, especially for plants that outrank local regulators. -->
