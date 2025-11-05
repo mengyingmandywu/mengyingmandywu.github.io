@@ -9,7 +9,11 @@ redirect_from:
 
 <style>
 .page__content a { color: #A51C30 !important; text-decoration: none !important; }
-.page__content a:hover { color: #A51C30 !important; text-decoration: underline !important; }
+.page__content a:hover { color: #A51C30 !important; text-decoration: none !important; }
+.archive a { color: #A51C30 !important; text-decoration: none !important; }
+.archive a:hover { color: #A51C30 !important; text-decoration: none !important; }
+article a { color: #A51C30 !important; text-decoration: none !important; }
+article a:hover { color: #A51C30 !important; text-decoration: none !important; }
 .page__content { margin-left: 0 !important; padding-left: 0 !important; }
 #main { padding-left: 0.5em !important; }
 .page { margin-left: 0 !important; }
