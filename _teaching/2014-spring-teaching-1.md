@@ -20,7 +20,7 @@ application of quantitative analysis.
 
 ## <span style="color: #A51C30;">Student Evaluations</span>
 
-Below is a selection of unedited student reviews. Full teaching evaluations are available [<span style="color: #A51C30; text-decoration: none;">here</span>](https://drive.google.com/file/d/1RN_za6dZvdh5mK6fwtTuip3-JPSs9rma/view?usp=sharing).
+Below is a selection of unedited student reviews. Full teaching evaluations are available <a href="https://drive.google.com/file/d/1RN_za6dZvdh5mK6fwtTuip3-JPSs9rma/view?usp=sharing" style="color: #A51C30; text-decoration: none;">here</a>.
 
 • <span style="font-size: 0.9em;">*"Mengying Wu was by far the best TA I've ever had in the entire 32 college courses I've taken across three universities (Columbia University, Hunter, and MIT). She always encouraged participation, thoughtfully answered students' questions, showed clear enthusiasm for the material, and actively engaged our recitation section. She encouraged us to think deeply about the material and was a truly outstanding TA."*</span>
 
