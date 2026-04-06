@@ -89,8 +89,6 @@ publication_category:
     title: 'Working Papers'
 
 # Site Settings
-
-# Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
