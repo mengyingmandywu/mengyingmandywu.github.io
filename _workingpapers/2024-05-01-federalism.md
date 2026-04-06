@@ -4,18 +4,7 @@ collection: workingpapers
 category: workingpapers
 authors: "with Kristen McCormack, William A. Scott, Aaron Smith, Jingran Zhang, and James H. Stock"
 #link: 'https://drive.google.com/file/d/1tnWX0AdqTZPc6ibIeq39vt-trPQVQVvR/view?usp=drive_link'
-excerpt: 'Abstract: We examine the impact of citizen participation in environmental governance during a nation-wide anti-pollution campaign in China. Drawing on detailed data about complaints made by citizens against a wide range of polluters, from small barbecue stalls to large industrial plants,
-we find that these complaints are primarily focused on the most visible sources in the immediate
-vicinity of the respondents, rather than on the largest polluters overall. Our results show that
-higher initial pollution levels at a plant do not predict a greater number of citizen complaints, 
-and that the existence of complaints does not lead to sustained reductions in pollution. Moreover, 
-we observe that including citizen complaints in the enforcement framework does not improve the
-short-term or medium-term effectiveness of pollution control efforts. A follow-up campaign carried
-out two years later yields similar results, demonstrating that citizen reporting has only \\ & a limited   
-influence on regulatory outcomes. Taken together, these findings underscore major limitations  
-to the capacity of grassroots monitoring to address information gaps and improve environmental 
-results, suggesting that citizen complaints, while indicative of local perceptions, cannot replace
-comprehensive regulatory oversight.'
+excerpt: 'Abstract: U.S. transportation fuels are governed by layered climate policies: the federal Renewable Fuel Standard (RFS) sets national biofuel volumes, while state Low Carbon Fuel Standards (LCFS) regulate the average lifecycle carbon intensity of transportation fuels using tradable credits. This paper asks how outcomes change when an additional state adopts an LCFS in the presence of a (potentially) binding RFS. Because the RFS largely fixes aggregate biofuel quantities, a new LCFS state may primarily redirect which biofuels are used and where they are consumed—shifting low-CI fuels into LCFS jurisdictions, displacing higher-CI fuels to non-LCFS regions, and reallocating compliance costs and credit revenues across states. Depending on blending constraints, feedstock supply, and credit-market equilibrium, this interaction can yield meaningful additional abatement or instead create emissions leakage with limited national gains. I develop a numerical framework that jointly solves for fuel and feedstock market responses and equilibrium in RFS (RIN) and LCFS credit markets, incorporating lifecycle carbon accounting and blending limits. Counterfactual scenarios evaluate California’s LCFS under the RFS and expansions of LCFS coverage, and compare alternative clean-fuel design features aimed at increasing additionality and limiting leakage in a federal system.'
 date: 2026-03-01
 venue: 'Working Paper'
 ---
