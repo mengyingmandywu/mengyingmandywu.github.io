@@ -45,6 +45,10 @@ layout: default
         {% if page.status %}
           <p class="page__status">{{ page.status }}</p>
         {% endif %}
+
+        {% if page.featured %}
+          <p class="page__featured">{{ page.featured }}</p>
+        {% endif %}
         </header>
       {% endunless %}
 

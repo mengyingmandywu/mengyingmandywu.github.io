@@ -65,7 +65,9 @@ hr {
   {% if job_market_paper.status %}
   <div class="archive__item-status" style="font-size: 1em; margin-top: 2px; margin-bottom: 2px;">{{ job_market_paper.status }}</div>
   {% endif %}
-  <div class="archive__item-featured" style="font-size: 1em; margin-top: 2px; margin-bottom: 2px;">Featured in <a href="https://www.eenews.net/articles/sustainable-aviation-fuel-offers-lifeline-to-ethanol-researchers-say/">E&E News</a>, <a href="https://www.rff.org/news/media-highlights/ee-news-sustainable-aviation-fuel-offers-lifeline-to-ethanol-researchers-say/">RFF</a>, and <a href="https://www.belfercenter.org/research-analysis/policy-options-achieve-us-sustainable-aviation-fuel-targets">Belfer Center</a></div>
+  {% if job_market_paper.featured %}
+  <div class="archive__item-featured" style="font-size: 1em; margin-top: 2px; margin-bottom: 2px;">{{ job_market_paper.featured }}</div>
+  {% endif %}
 <p>
   <strong>Lead author:</strong> I took charge of designing the model, performing the empirical work and coding, and handling data acquisition and analysis. I also authored the bulk of the manuscript and coordinated the collaborative multi-institutional team. While the project was originally started by James H. Stock, this work forms the main intellectual product of my postdoc, funded by the Salata Institute and the Environment and Natural Resources Program.
 </p>
