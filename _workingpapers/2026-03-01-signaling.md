@@ -1,7 +1,7 @@
 ---
 title: "Inspections as Soft Signaling: Central–Local Learning in China’s Environmental Campaigns"
 collection: workingpapers
-category: workingpapers
+category: workinprogress
 authors: "with Valerie J. Karplus"
 #link: 'https://drive.google.com/file/d/1tnWX0AdqTZPc6ibIeq39vt-trPQVQVvR/view?usp=drive_link'
 excerpt: 'Abstract: 
