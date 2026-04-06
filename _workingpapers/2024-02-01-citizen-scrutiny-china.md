@@ -11,7 +11,7 @@ higher initial pollution levels at a plant do not predict a greater number of ci
 and that the existence of complaints does not lead to sustained reductions in pollution. Moreover, 
 we observe that including citizen complaints in the enforcement framework does not improve the
 short-term or medium-term effectiveness of pollution control efforts. A follow-up campaign carried
-out two years later yields similar results, demonstrating that citizen reporting has only \\ & a limited   
+out two years later yields similar results, demonstrating that citizen reporting has only a limited   
 influence on regulatory outcomes. Taken together, these findings underscore major limitations  
 to the capacity of grassroots monitoring to address information gaps and improve environmental 
 results, suggesting that citizen complaints, while indicative of local perceptions, cannot replace
