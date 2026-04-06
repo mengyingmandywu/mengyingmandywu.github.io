@@ -23,7 +23,7 @@ repository               : "mengyingmandywu/mengyingmandywu.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-    avatar           : "images/photo_mengying.jpg"
+  avatar           : "images/photo_mengying.jpg"
   name             : "Mengying Wu"
   pronouns         : # example: "she/her"  
   bio              : "Environmental Policy | Climate Solutions"
@@ -241,6 +241,7 @@ collections:
 
 
 # These settings control how pages and collections are included in the site
+defaults:
   - scope:
       path: ""
       type: posts
