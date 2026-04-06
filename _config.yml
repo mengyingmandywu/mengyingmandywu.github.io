@@ -87,8 +87,6 @@ publication_category:
     title: 'Publications'    
   workingpapers:
     title: 'Working Papers'
-  jobmarketpaper:
-    title: 'Job Market Paper'
 
 # Site Settings
 
@@ -243,8 +241,6 @@ collections:
 
 
 # These settings control how pages and collections are included in the site
-defaults:
-  # _posts
   - scope:
       path: ""
       type: posts

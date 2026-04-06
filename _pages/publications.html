@@ -52,6 +52,8 @@ hr {
 
 {% include base_path %}
 
+{% assign job_market_paper = site.jobmarketpaper | first %}
+
 <h2 style="font-size: 1.25em; margin-bottom: 0.2em; margin-top: 1.5em;">Job Market Paper</h2><hr />
 <div style="margin-top: 1.5em;"></div>
 <div class="archive__item">
@@ -60,6 +62,9 @@ hr {
   </div>
   <div style="height: 0.5em;"></div>
   <div class="archive__item-authors" style="font-size: 1em; margin-bottom: 2px;">with Kristen McCormack, William A. Scott, Aaron Smith, Jingran Zhang, and James H. Stock</div>
+  {% if job_market_paper.status %}
+  <div class="archive__item-status" style="font-size: 1em; margin-top: 2px; margin-bottom: 2px;">{{ job_market_paper.status }}</div>
+  {% endif %}
   <div class="archive__item-featured" style="font-size: 1em; margin-top: 2px; margin-bottom: 2px;">Featured in <a href="https://www.eenews.net/articles/sustainable-aviation-fuel-offers-lifeline-to-ethanol-researchers-say/">E&E News</a>, <a href="https://www.rff.org/news/media-highlights/ee-news-sustainable-aviation-fuel-offers-lifeline-to-ethanol-researchers-say/">RFF</a>, and <a href="https://www.belfercenter.org/research-analysis/policy-options-achieve-us-sustainable-aviation-fuel-targets">Belfer Center</a></div>
 <p>
   <strong>Lead author:</strong> I took charge of designing the model, performing the empirical work and coding, and handling data acquisition and analysis. I also authored the bulk of the manuscript and coordinated the collaborative multi-institutional team. While the project was originally started by James H. Stock, this work forms the main intellectual product of my postdoc, funded by the Salata Institute and the Environment and Natural Resources Program.

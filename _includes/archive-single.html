@@ -49,6 +49,10 @@
     {% if post.featured %}
       <p class="archive__item-featured" style="margin-top: 2px; margin-bottom: 2px; font-size: 0.9em;">{{ post.featured }}</p>
     {% endif %}
+
+    {% if post.status %}
+      <p class="archive__item-status" style="margin-top: 2px; margin-bottom: 2px; font-size: 0.9em;">{{ post.status }}</p>
+    {% endif %}
     
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
