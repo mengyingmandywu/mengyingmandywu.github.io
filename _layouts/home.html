@@ -1,0 +1,58 @@
+---
+layout: default
+---
+{% assign jmp = site.jobmarketpaper | first %}
+{% assign everything = site.publications | concat: site.workingpapers %}
+<main>
+<div class="wrap">
+  <section class="hero">
+    <div>
+      <h1>I study how climate policy performs once it passes through the markets and bureaucracies that deliver it.</h1>
+      <p class="where">Postdoctoral Fellow at the <a href="https://salatainstitute.harvard.edu/">Salata Institute for Climate and Sustainability</a>, jointly appointed to the <a href="https://www.belfercenter.org/programs/environment-and-natural-resources">Environment and Natural Resources Program</a> at the Harvard Kennedy School Belfer Center. Ph.D., MIT.</p>
+      <div class="actions">
+        <a class="btn primary" href="{{ jmp.pdf }}">Job market paper</a>
+        <a class="btn" href="/files/CV_Mengying_Wu.pdf">CV</a>
+        <a class="mail" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+      </div>
+    </div>
+    <figure style="margin:0">
+      <img src="/images/portrait.jpg" alt="Mengying Wu" width="720" height="900" fetchpriority="high">
+      <p class="market">On the academic job market, 2026&ndash;27</p>
+    </figure>
+  </section>
+</div>
+
+<section class="paths"><div class="wrap">
+  <h2>What a policy passes through</h2>
+  <div class="path a"><div class="tag a">Overlapping climate policies in U.S. transportation</div>
+    <div class="stop a"><b>What the rules say</b><span>A federal mandate, state fuel standards, and tax credits, each written on its own.</span></div>
+    <div class="stop mid a"><b>One fuel market</b><span>The same limited supply of low-carbon fuel serves road and air.</span></div>
+    <div class="stop a"><b>What reaches the buyer</b><span>Costs and emissions reductions depend on how the market connects the rules.</span></div></div>
+  <div class="path"><div class="tag b">Delegated enforcement in China</div>
+    <div class="stop b"><b>What the center says</b><span>Central teams inspect a city for one month.</span></div>
+    <div class="stop mid b"><b>Local officials and plant ownership</b><span>Whom a plant answers to shapes how it responds.</span></div>
+    <div class="stop b"><b>What reaches the plant</b><span>SO<sub>2</sub> falls during inspection, then reverts once it ends.</span></div></div>
+  <p class="note">In both, the structure a policy passes through shapes the answers as much as what it says.</p>
+</div></section>
+
+<div class="wrap">
+  <section class="sec"><h2>Job market paper</h2><div>
+    {% include paper.html p=jmp href=jmp.pdf blurb=jmp.blurb abstract=true %}
+  </div></section>
+
+  <section class="sec"><h2>Overlapping climate policies<small>Who pays and what is abated when policies stack</small></h2><div>
+    {% assign list = everything | where: "line", "transport" | sort: "order" %}
+    {% for p in list %}{% include paper.html p=p %}{% endfor %}
+  </div></section>
+
+  <section class="sec"><h2>Delegated enforcement<small>Whom local governments act against, and whether it lasts</small></h2><div>
+    {% assign list = everything | where: "line", "china" | sort: "order" %}
+    {% for p in list %}{% include paper.html p=p %}{% endfor %}
+  </div></section>
+
+  <section class="sec"><h2>Policy writing</h2><div>
+    {% assign list = site.workingpapers | where: "category", "policywriting" | sort: "date" | reverse %}
+    {% for p in list %}{% include paper.html p=p %}{% endfor %}
+  </div></section>
+</div>
+</main>

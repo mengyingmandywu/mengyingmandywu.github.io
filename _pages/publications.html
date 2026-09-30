@@ -1,139 +1,27 @@
 ---
-layout: archive
+layout: plain
 title: "Research"
 permalink: /research/
-author_profile: true
 ---
+{% assign jmp = site.jobmarketpaper | first %}
+{% assign everything = site.publications | concat: site.workingpapers %}
+<p class="lede">I study how climate and environmental policy performs once it passes through the markets and bureaucracies that deliver it: what it costs, who pays, and whether the change lasts. My work follows two lines, overlapping climate policies in U.S. transportation and delegated environmental enforcement in China, using equilibrium models, causal inference, and text-as-data methods.</p>
 
-<style>
-.archive__item {
-  margin-bottom: 1em !important;
-}
-.archive__item-excerpt {
-  margin-top: 5px !important;
-  margin-bottom: 0.5em !important;
-  font-size: 1em !important;
-}
-.archive__item-authors {
-  margin-bottom: 2px !important;
-  line-height: 1.0 !important;
-}
-/* Specific targeting for working papers */
-.workingpapers-item .archive__item-authors {
-  margin-bottom: -5px !important;
-}
-.workingpapers-item .archive__item-excerpt {
-  margin-top: 0px !important;
-}
-h2 {
-  margin-bottom: 0.2em !important;
-  margin-top: 1.5em !important;
-}
-p {
-  margin-bottom: 0.5em !important;
-}
-hr {
-  margin-top: 0em !important;
-  margin-bottom: 0em !important;
-}
-.archive__item a {
-  color: #A51C30 !important;
-}
-.archive__item a:hover {
-  color: #8B1728 !important;
-}
-</style>
+<section class="sec"><h2>Job market paper</h2><div>
+  {% include paper.html p=jmp href=jmp.pdf abstract=true %}
+</div></section>
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<section class="sec"><h2>Overlapping climate policies<small>Who pays and what is abated when policies stack</small></h2><div>
+  {% assign list = everything | where: "line", "transport" | sort: "order" %}
+  {% for p in list %}{% include paper.html p=p abstract=true %}{% endfor %}
+</div></section>
 
-<p>I study how climate and environmental policy performs once it passes through the markets and bureaucracies that deliver it: what it costs, who pays, and whether the change lasts. My work follows two lines, overlapping climate policies in U.S. transportation and delegated environmental enforcement in China, using equilibrium models, causal inference, and text-as-data methods.</p>
+<section class="sec"><h2>Delegated enforcement<small>Whom local governments act against, and whether it lasts</small></h2><div>
+  {% assign list = everything | where: "line", "china" | sort: "order" %}
+  {% for p in list %}{% include paper.html p=p abstract=true %}{% endfor %}
+</div></section>
 
-{% include base_path %}
-
-{% assign job_market_paper = site.jobmarketpaper | first %}
-
-<h2 style="font-size: 1.25em; margin-bottom: 0.2em; margin-top: 1.5em;">Job Market Paper</h2><hr />
-<div style="margin-top: 1.5em;"></div>
-<div class="archive__item">
-  <div class="archive__item-title" style="font-size: 1.25em; font-weight: 600;">
-    <a href="https://drive.google.com/file/d/10jmNvZIqYK1-2f9sNp-EuN4edPeVh7Sp/view?usp=drive_link" target="_blank">Policy Interactions and the Cost of Decarbonizing Aviation</a>
-  </div>
-  <div style="height: 0.5em;"></div>
-  <div class="archive__item-authors" style="font-size: 1em; margin-bottom: 2px;">with Kristen McCormack, William A. Scott, Aaron Smith, Jingran Zhang, and James H. Stock</div>
-  {% if job_market_paper.status %}
-  <div class="archive__item-status" style="font-size: 1em; margin-top: 2px; margin-bottom: 2px;">{{ job_market_paper.status }}</div>
-  {% endif %}
-  {% if job_market_paper.featured %}
-  <div class="archive__item-featured" style="font-size: 1em; margin-top: 2px; margin-bottom: 2px;">{{ job_market_paper.featured }}</div>
-  {% endif %}
-<p>
-  <strong>First author:</strong> I designed the equilibrium model, carried out the calibration, coding, and empirical analysis, wrote the manuscript, and coordinated the research team. The project began with James H. Stock and is the main product of my postdoctoral fellowship, funded by the Salata Institute and the Environment and Natural Resources Program.
-</p>
-  <div style="height: 0.5em;"></div>
-  <div class="archive__item-excerpt" style="font-size: 1em; margin-top: 5px; margin-bottom: 0.5em;">
-    Abstract: Decarbonizing aviation in the short term will likely entail replacing large quantities of petroleum jet fuel with sustainable aviation fuels (SAFs), which are predominantly biofuels. In the United States, biofuels are currently used as substitutes for gasoline and diesel in road transportation and are supported by a complex set of federal and state policies including the Renewable Fuel Standard (RFS), state low carbon fuel standards, and state and federal tax credits. Policies promoting SAF therefore interact with surface transport biofuel policies. In this paper, we use a new detailed partial equilibrium model of road and air transportation fuel markets to compare various policy options designed to achieve a target of 3 billion gallons of SAF by 2030. Our results suggest that the target is attainable with current technology but not with current policy. Several potential federal policies, including modifications to the existing RFS, a federal SAF tax credit, or a clean aviation standard could meet the 3 billion gallon target with similar emissions reductions and costs but different incidence. The lowest cost policy we study entails replacing all current biofuels policies with a modest carbon tax on fossil transportation fuels paired with a SAF tax credit.
-  </div>
-</div>
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-    {% for post in site.workingpapers reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-    {% for post in site.workinprogress reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-    {% for post in site.jobmarketpaper reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-  {% for post in site.workingpapers reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-  {% for post in site.jobmarketpaper reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
-
+<section class="sec"><h2>Policy writing</h2><div>
+  {% assign list = site.workingpapers | where: "category", "policywriting" | sort: "date" | reverse %}
+  {% for p in list %}{% include paper.html p=p %}{% endfor %}
+</div></section>

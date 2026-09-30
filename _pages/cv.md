@@ -1,14 +1,13 @@
 ---
-layout: archive
+layout: plain
 title: "CV"
 permalink: /cv/
-author_profile: true
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+<p class="lede">Updated September 2026.</p>
 
-<p style="margin-top: 50px; font-size: 18px;">
-  You can access my CV <a href="/files/CV_Mengying_Wu.pdf" style="color: #A51C30; text-decoration: none; font-weight: bold;">here</a>.
-</p>
+<p><a class="btn primary" href="/files/CV_Mengying_Wu.pdf">Download CV (PDF)</a></p>
+
+<iframe src="/files/CV_Mengying_Wu.pdf" title="CV of Mengying Wu" style="width:100%;height:80vh;border:1px solid var(--rule);margin-top:24px"></iframe>

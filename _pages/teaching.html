@@ -1,13 +1,17 @@
 ---
-layout: archive
+layout: plain
 title: "Teaching"
 permalink: /teaching/
-author_profile: true
 ---
-
-<p>My teaching and mentoring philosophy is evidence-based, student-centered, and inclusive, aiming to equip students with analytical and critical thinking skills to address real-world environmental and climate policy challenges through interactive, research-informed, and supportive learning environments.
-{% include base_path %}
+<p class="lede">My teaching and mentoring philosophy is evidence-based, student-centered, and inclusive, aiming to equip students with analytical and critical thinking skills to address real-world environmental and climate policy challenges through interactive, research-informed, and supportive learning environments.</p>
 
 {% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+<section class="sec">
+  <h2>{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}<small>{{ post.venue }}</small></h2>
+  <div class="prose">
+    {% if post.level %}<p class="by">{{ post.level }}</p>{% endif %}
+    {% if post.teaching_role %}<p class="by">{{ post.teaching_role }}</p>{% endif %}
+    {{ post.content }}
+  </div>
+</section>
 {% endfor %}
