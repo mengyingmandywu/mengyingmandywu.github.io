@@ -26,7 +26,7 @@ author:
   avatar           : "photo_mandy.jpg"
   name             : "Mengying Wu"
   pronouns         : # example: "she/her"  
-  bio              : "Environmental Policy | Climate Solutions"
+  bio              : "Energy and Environmental Policy"
   location         : #"Belfer Center 416, 79 John F. Kennedy St Cambridge, MA 02138"
   employer         : "Harvard University"
   uri              : # URL
@@ -88,7 +88,9 @@ publication_category:
   workingpapers:
     title: 'Working Papers'
   workinprogress:
-    title: 'Work in Progress'
+    title: 'Research in Progress'
+  policywriting:
+    title: 'Policy Writing'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
