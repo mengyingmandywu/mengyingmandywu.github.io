@@ -3,9 +3,11 @@
   <h3>{% if include.href %}<a href="{{ include.href }}">{{ p.title }}</a>{% elsif p.link %}<a href="{{ p.link }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
   {% if p.authors and p.authors != "" %}<p class="by">{{ p.authors }}</p>{% endif %}
   {% if p.status %}<p class="status">{{ p.status }}</p>{% endif %}
-  {% if include.blurb %}<p class="blurb">{{ include.blurb }}</p>{% endif %}
+  {% if include.blurb and p.blurb %}<p class="blurb">{{ p.blurb }}</p>{% endif %}
   {% if include.abstract and p.excerpt %}
   <details><summary>Abstract</summary><div>{{ p.excerpt | remove_first: "Abstract: " | strip | markdownify }}</div></details>
   {% endif %}
+  {% if p.role %}<p class="by more">{{ p.role }}</p>{% endif %}
   {% if p.featured %}<p class="by more">{{ p.featured }}</p>{% endif %}
+  {% if p.code %}<p class="by"><a href="{{ p.code }}">Replication files</a></p>{% endif %}
 </article>

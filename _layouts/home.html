@@ -7,8 +7,8 @@ layout: default
 <div class="wrap">
   <section class="hero">
     <div>
-      <h1>I study how climate policy performs once it passes through the markets and bureaucracies that deliver it.</h1>
-      <p class="where">Postdoctoral Fellow at the <a href="https://salatainstitute.harvard.edu/">Salata Institute for Climate and Sustainability</a>, jointly appointed to the <a href="https://www.belfercenter.org/programs/environment-and-natural-resources">Environment and Natural Resources Program</a> at the Harvard Kennedy School Belfer Center. Ph.D., MIT.</p>
+      <h1>I study how climate and environmental policy performs once it passes through the markets and bureaucracies that deliver it.</h1>
+      <p class="where">I am an energy and environmental policy scholar and a Postdoctoral Fellow at the <a href="https://salatainstitute.harvard.edu/">Salata Institute for Climate and Sustainability</a>, jointly appointed to the <a href="https://www.belfercenter.org/programs/environment-and-natural-resources">Environment and Natural Resources Program</a> at the Harvard Kennedy School Belfer Center. I ask three questions about any policy: what it costs, who pays, and whether the change lasts. Ph.D., MIT.</p>
       <div class="actions">
         <a class="btn primary" href="{{ jmp.pdf }}">Job market paper</a>
         <a class="btn" href="/files/CV_Mengying_Wu.pdf">CV</a>
@@ -16,7 +16,7 @@ layout: default
       </div>
     </div>
     <figure style="margin:0">
-      <img src="/images/portrait.jpg" alt="Mengying Wu" width="720" height="900" fetchpriority="high">
+      <img src="/images/portrait.jpg" alt="Mengying Wu" width="800" height="1000" fetchpriority="high">
       <p class="market">On the academic job market, 2026&ndash;27</p>
     </figure>
   </section>
@@ -24,30 +24,30 @@ layout: default
 
 <section class="paths"><div class="wrap">
   <h2>What a policy passes through</h2>
-  <div class="path a"><div class="tag a">Overlapping climate policies in U.S. transportation</div>
-    <div class="stop a"><b>What the rules say</b><span>A federal mandate, state fuel standards, and tax credits, each written on its own.</span></div>
-    <div class="stop mid a"><b>One fuel market</b><span>The same limited supply of low-carbon fuel serves road and air.</span></div>
-    <div class="stop a"><b>What reaches the buyer</b><span>Costs and emissions reductions depend on how the market connects the rules.</span></div></div>
+  <div class="path a"><div class="tag a">Policy layering in U.S. transportation</div>
+    <div class="stop a"><b>What the rules say</b><span>Federal fuel standards, tax credits, and state clean-fuel programs, each written on its own.</span></div>
+    <div class="stop mid a"><b>One feedstock market</b><span>Road and aviation fuels compete for the same limited biofuel feedstocks.</span></div>
+    <div class="stop a"><b>What happens</b><span>Feedstock flows to California road fuel. Aviation fuel reaches about 2.5 percent of the 2030 target.</span></div></div>
   <div class="path"><div class="tag b">Delegated enforcement in China</div>
-    <div class="stop b"><b>What the center says</b><span>Central teams inspect a city for one month.</span></div>
-    <div class="stop mid b"><b>Local officials and plant ownership</b><span>Whom a plant answers to shapes how it responds.</span></div>
-    <div class="stop b"><b>What reaches the plant</b><span>SO<sub>2</sub> falls during inspection, then reverts once it ends.</span></div></div>
-  <p class="note">In both, the structure a policy passes through shapes the answers as much as what it says.</p>
+    <div class="stop b"><b>What the center sets</b><span>Central teams inspect a province and open a complaint hotline.</span></div>
+    <div class="stop mid b"><b>Local officials decide</b><span>Local governments choose which complaints become sanctions.</span></div>
+    <div class="stop b"><b>What reaches the plant</b><span>SO<sub>2</sub> falls while inspectors are on site. More than half the reduction reverses after they leave.</span></div></div>
+  <p class="note">What a policy says and what it does are different things. Both lines of my work measure the difference.</p>
 </div></section>
 
 <div class="wrap">
   <section class="sec"><h2>Job market paper</h2><div>
-    {% include paper.html p=jmp href=jmp.pdf blurb=jmp.blurb abstract=true %}
+    {% include paper.html p=jmp href=jmp.pdf blurb=true abstract=true %}
   </div></section>
 
-  <section class="sec"><h2>Overlapping climate policies<small>Who pays and what is abated when policies stack</small></h2><div>
+  <section class="sec"><h2>Policy layering<small>What overlapping climate policies cost and who pays</small></h2><div>
     {% assign list = everything | where: "line", "transport" | sort: "order" %}
-    {% for p in list %}{% include paper.html p=p %}{% endfor %}
+    {% for p in list %}{% include paper.html p=p blurb=true %}{% endfor %}
   </div></section>
 
-  <section class="sec"><h2>Delegated enforcement<small>Whom local governments act against, and whether it lasts</small></h2><div>
+  <section class="sec"><h2>Delegated enforcement<small>Oversight, local discretion, and whether gains last</small></h2><div>
     {% assign list = everything | where: "line", "china" | sort: "order" %}
-    {% for p in list %}{% include paper.html p=p %}{% endfor %}
+    {% for p in list %}{% include paper.html p=p blurb=true %}{% endfor %}
   </div></section>
 
   <section class="sec"><h2>Policy writing</h2><div>
