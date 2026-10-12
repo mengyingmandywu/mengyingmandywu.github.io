@@ -2,23 +2,14 @@
 layout: default
 ---
 {% assign jmp = site.jobmarketpaper | first %}
-{% assign pubs = site.publications | sort: "order" %}
-{% assign wip_t = site.workingpapers | where: "category", "workinprogress" | where: "line", "transport" | sort: "order" %}
-{% assign wip_c = site.workingpapers | where: "category", "workinprogress" | where: "line", "china" | sort: "order" %}
-{% assign wip = wip_t | concat: wip_c %}
 <main>
 <div class="wrap">
   <section class="hero">
     <div>
       <h1>I study how climate and environmental policy performs once it passes through the markets and bureaucracies that deliver it.</h1>
       <p class="where">Energy and environmental policy scholar. Postdoctoral Fellow, <a href="https://salatainstitute.harvard.edu/">Salata Institute for Climate and Sustainability</a> and the <a href="https://www.belfercenter.org/programs/environment-and-natural-resources">Environment and Natural Resources Program</a>, Belfer Center, Harvard Kennedy School. Ph.D., MIT.</p>
-      <div class="jmp-card">
-        <p class="label">Job market paper</p>
-        <p class="t"><a href="#jmp">{{ jmp.title }}</a></p>
-        <p class="b">{{ jmp.blurb }}</p>
-      </div>
+      <p class="where">My job market paper, <a href="/research/#jmp"><em>{{ jmp.title }}</em></a>, asks how expectations shape the cost of overlapping federal and state climate policy, and what an additional federal dollar buys.</p>
       <div class="actions">
-        <a class="btn primary" href="#jmp">Job market paper</a>
         <a class="btn" href="/files/CV_Mengying_Wu.pdf">CV</a>
         <a class="mail" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
       </div>
@@ -28,27 +19,6 @@ layout: default
       <p class="market">On the academic job market, 2026&ndash;27</p>
     </figure>
   </section>
-
-  <section class="sec" id="jmp"><h2>Job market paper</h2><div>
-    <article class="item">
-      <h3>{{ jmp.title }}</h3>
-      {% if jmp.status %}<p class="status">{{ jmp.status }}</p>{% endif %}
-      <div class="abstract">{{ jmp.excerpt | strip | markdownify }}</div>
-    </article>
-  </div></section>
-
-  <section class="sec" id="publications"><h2>Publications</h2><div>
-    {% for p in pubs %}{% include paper.html p=p href=p.pdf blurb=true abstract=true %}{% endfor %}
-  </div></section>
-
-  <section class="sec" id="research"><h2>Work in progress</h2><div>
-    {% for p in wip %}{% include paper.html p=p blurb=true abstract=true %}{% endfor %}
-  </div></section>
-
-  <section class="sec"><h2>Policy writing</h2><div>
-    {% assign list = site.workingpapers | where: "category", "policywriting" | sort: "date" | reverse %}
-    {% for p in list %}{% include paper.html p=p %}{% endfor %}
-  </div></section>
 </div>
 
 <section class="paths"><div class="wrap">
