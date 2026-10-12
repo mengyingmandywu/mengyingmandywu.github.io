@@ -6,7 +6,7 @@ redirect_from:
   - /resume
 ---
 
-<p class="lede">Updated September 2026.</p>
+<p class="lede">Updated October 2026.</p>
 
 <p><a class="btn primary" href="/files/CV_Mengying_Wu.pdf">Download CV (PDF)</a></p>
 

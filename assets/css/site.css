@@ -103,3 +103,16 @@ details div{margin-top:8px;max-width:38em;font-size:.97rem;color:#27323c}
 .page .sec:first-of-type{border-top:1px solid var(--rule)}
 .page > .btn{margin-top:8px}
 @media (max-width:860px){.hero figure{max-width:160px}}
+
+/* job market paper card in hero (10/2026) */
+.hero .jmp-card{margin-top:26px;padding:14px 0 2px 18px;border-left:3px solid var(--crimson);max-width:36em}
+.jmp-card .label{font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--crimson);font-weight:600}
+.jmp-card .t{font-size:1.1rem;font-weight:600;line-height:1.35;margin-top:4px}
+.jmp-card .t a{text-decoration:none}
+.jmp-card .b{color:var(--soft);font-size:.95rem;margin-top:6px}
+.item .abstract{margin-top:8px;max-width:38em}
+.item .abstract p{margin-top:8px}
+.item .abstract p:first-child{margin-top:0}
+.sec{scroll-margin-top:16px}
+.paths{margin-top:8px}
+.prose p.by{color:var(--soft);font-size:.92rem;margin-top:14px}

@@ -10,7 +10,7 @@ paperurl: 'https://www.pnas.org/doi/10.1073/pnas.2214262120'
 bibtexurl: #'https://academicpages.github.io/files/bibtex1.bib'
 citation: #'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 line: china
-order: 1
+order: 2
 title: 'Dynamic Responses of SO<sub>2</sub> Pollution to China''s Environmental Inspections'
 authors: 'with Valerie J. Karplus (co-first authors)'
 status: '<i>Proceedings of the National Academy of Sciences</i>, 2023'

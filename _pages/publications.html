@@ -2,26 +2,6 @@
 layout: plain
 title: "Research"
 permalink: /research/
+redirect_to: /
+sitemap: false
 ---
-{% assign jmp = site.jobmarketpaper | first %}
-{% assign everything = site.publications | concat: site.workingpapers %}
-<p class="lede">What a policy says and what it does are different things. I ask three questions about the difference: what the policy costs, who pays, and whether the change lasts. I study these questions in multi-level systems, using equilibrium models that carry the engineering constraints and crediting rules firms face, administrative data analyzed with causal designs and text-as-data methods, and fieldwork with regulators and firms in the United States and China.</p>
-
-<section class="sec"><h2>Job market paper</h2><div>
-  {% include paper.html p=jmp href=jmp.pdf abstract=true %}
-</div></section>
-
-<section class="sec"><h2>Policy layering<small>What overlapping climate policies cost and who pays</small></h2><div>
-  {% assign list = everything | where: "line", "transport" | sort: "order" %}
-  {% for p in list %}{% include paper.html p=p abstract=true %}{% endfor %}
-</div></section>
-
-<section class="sec"><h2>Delegated enforcement<small>Oversight, local discretion, and whether gains last</small></h2><div>
-  {% assign list = everything | where: "line", "china" | sort: "order" %}
-  {% for p in list %}{% include paper.html p=p abstract=true %}{% endfor %}
-</div></section>
-
-<section class="sec"><h2>Policy writing</h2><div>
-  {% assign list = site.workingpapers | where: "category", "policywriting" | sort: "date" | reverse %}
-  {% for p in list %}{% include paper.html p=p %}{% endfor %}
-</div></section>

@@ -3,15 +3,38 @@ layout: plain
 title: "Teaching"
 permalink: /teaching/
 ---
-<p class="lede">My teaching and mentoring philosophy is evidence-based, student-centered, and inclusive, aiming to equip students with analytical and critical thinking skills to address real-world environmental and climate policy challenges through interactive, research-informed, and supportive learning environments.</p>
+<p class="lede">My goal as a teacher is to help students move from a policy claim to a defensible recommendation: to define the problem precisely, identify who faces what incentives, judge what the evidence can and cannot show, and explain the trade-offs behind their advice.</p>
 
-{% for post in site.teaching reversed %}
-<section class="sec">
-  <h2>{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}<small>{{ post.venue }}</small></h2>
-  <div class="prose">
-    {% if post.level %}<p class="by">{{ post.level }}</p>{% endif %}
-    {% if post.teaching_role %}<p class="by">{{ post.teaching_role }}</p>{% endif %}
-    {{ post.content }}
-  </div>
-</section>
-{% endfor %}
+<section class="sec"><h2>Teaching</h2><div>
+  <article class="item">
+    <h3>Science, Technology, and Public Policy (17.309 / IDS.412)</h3>
+    <p class="by">MIT, Spring 2020 and Spring 2021. Teaching Assistant for Professors Noelle Selin and Kenneth Oye.</p>
+    <p class="blurb">Led weekly recitation sections of 10 to 15 graduate and undergraduate students, connecting economic reasoning to live policy debates. Graded assignments and mentored students through their research projects, with an emphasis on clear problem formulation and evidence-based argument. <a href="https://drive.google.com/file/d/1RN_za6dZvdh5mK6fwtTuip3-JPSs9rma/view?usp=sharing">Full teaching evaluations</a>.</p>
+  </article>
+  <article class="item">
+    <h3>The Economic Approach to Cities and Environmental Sustainability</h3>
+    <p class="by">MIT, Fall 2021. Guest lecture: &ldquo;Political Economy of Regulating Pollution.&rdquo;</p>
+  </article>
+  <article class="item">
+    <h3>Kaufman Teaching Certificate Program</h3>
+    <p class="by">MIT, Fall 2020.</p>
+    <p class="blurb">Training in evidence-based and inclusive teaching. Designed the curriculum for a course, <em>Data Science for Decision Making in Public Policy</em>, that pairs economic and policy questions with hands-on work in supervised learning, clustering and text analysis, and network analysis.</p>
+  </article>
+</div></section>
+
+<section class="sec"><h2>Research supervision</h2><div>
+  <article class="item">
+    <h3>Harvard University, 2026 to present</h3>
+    <p class="blurb">Supervise undergraduate research assistants on the clean-fuel policy modeling project.</p>
+  </article>
+  <article class="item">
+    <h3>Carnegie Mellon University, 2022 to 2023</h3>
+    <p class="blurb">Supervised master's research assistants on a green-power supply chain project with Tsinghua University, from interview design through data collection and analysis.</p>
+  </article>
+</div></section>
+
+<section class="sec"><h2>From students</h2><div class="prose">
+  <p>&ldquo;Mengying Wu was by far the best TA I've ever had in the entire 32 college courses I've taken across three universities (Columbia University, Hunter, and MIT). She always encouraged participation, thoughtfully answered students' questions, showed clear enthusiasm for the material, and actively engaged our recitation section. She encouraged us to think deeply about the material and was a truly outstanding TA.&rdquo;</p>
+  <p>&ldquo;Mandy's recitations were the honest, open-minded, and judgment-free zone to explore the confusing material of this class, and I deeply appreciated that. In particular, it really seemed like she sympathized with our moments of confusion when it came to certain topics, which helped us to see the material for what it was: inherently abstract at times.&rdquo;</p>
+  <p class="by">Unedited comments from MIT course evaluations.</p>
+</div></section>
