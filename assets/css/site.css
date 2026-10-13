@@ -118,3 +118,14 @@ details div{margin-top:8px;max-width:38em;font-size:.97rem;color:#27323c}
 .prose p.by{color:var(--soft);font-size:.92rem;margin-top:14px}
 .hero .where + .where{margin-top:14px;color:var(--ink)}
 .hero .contact{margin-top:22px;font-size:.95rem;color:var(--soft)}
+/* 10/12: quieter hero */
+.hero h1{font-size:clamp(1.45rem,2.4vw,1.8rem);line-height:1.3;max-width:24em}
+.hero .where{margin-top:18px}
+.hero h1{font-size:clamp(1.7rem,3vw,2.2rem);font-weight:400}
+/* 10/12: bio left, details under photo */
+.hero .bio p{max-width:34em;font-size:1.05rem}
+.hero .bio p + p{margin-top:18px}
+.hero .card{margin-top:14px;font-size:.92rem;line-height:1.45;color:var(--soft)}
+.hero .card a{color:var(--ink)}
+.hero .card + .market{margin-top:10px}
+@media (max-width:860px){.hero figure{max-width:none}.hero img{width:160px}}
