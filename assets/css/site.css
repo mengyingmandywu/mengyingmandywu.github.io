@@ -129,3 +129,7 @@ details div{margin-top:8px;max-width:38em;font-size:.97rem;color:#27323c}
 .hero .card a{color:var(--ink)}
 .hero .card + .market{margin-top:10px}
 @media (max-width:860px){.hero figure{max-width:none}.hero img{width:160px}}
+/* 10/13: one accent color (crimson) only for navigation and interactive markers */
+.item .status em{color:inherit;font-weight:400;font-style:normal}
+.prose a{color:var(--ink)}
+.prose a:hover{color:var(--crimson)}
