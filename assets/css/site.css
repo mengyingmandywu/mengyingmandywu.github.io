@@ -133,3 +133,6 @@ details div{margin-top:8px;max-width:38em;font-size:.97rem;color:#27323c}
 .item .status em{color:inherit;font-weight:400;font-style:normal}
 .prose a{color:var(--ink)}
 .prose a:hover{color:var(--crimson)}
+/* 10/15: same text size on home and inner pages */
+.hero .bio p{font-size:1rem}
+.page > h1{font-size:1.6rem}

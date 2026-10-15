@@ -12,7 +12,8 @@ permalink: /research/
   <article class="item">
     <h3>{{ jmp.title }}</h3>
     {% if jmp.status %}<p class="status">{{ jmp.status }}</p>{% endif %}
-    <div class="abstract">{{ jmp.excerpt | strip | markdownify }}</div>
+    {% if jmp.blurb %}<p class="blurb">{{ jmp.blurb }}</p>{% endif %}
+    <details><summary>Abstract</summary><div>{{ jmp.excerpt | strip | markdownify }}</div></details>
   </article>
 </div></section>
 
