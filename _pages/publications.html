@@ -11,9 +11,7 @@ permalink: /research/
 <section class="sec" id="jmp"><h2>Job market paper</h2><div>
   <article class="item">
     <h3>{% if jmp.pdf %}<a href="{{ jmp.pdf }}">{{ jmp.title }}</a>{% else %}{{ jmp.title }}{% endif %}</h3>
-    {% if jmp.status %}<p class="status">{{ jmp.status }}{% if jmp.pdf %}. <a href="{{ jmp.pdf }}">PDF</a>{% endif %}</p>{% endif %}
-    {% if jmp.blurb %}<p class="blurb">{{ jmp.blurb }}</p>{% endif %}
-    <details><summary>Abstract</summary><div>{{ jmp.excerpt | strip | markdownify }}</div></details>
+        <details><summary>Abstract</summary><div>{{ jmp.excerpt | strip | markdownify }}</div></details>
   </article>
 </div></section>
 
